@@ -1,0 +1,94 @@
+:root {
+    --twitter-blue: #1DA1F2;
+    --sidebar-clr: rgb(36, 36, 36);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(219, 219, 219);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+a{
+    color: var(--twitter-blue);
+}
+
+.highlight {
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+}
+
+#taskBtn {
+    background-color: var(--twitter-blue);
+    border-radius: 15px;
+    padding: 2vh 3vw 2vh 3vw;
+}
+
+#sidebar {
+    width: 15vw;
+    height: 100vh;
+    border-right: 1px solid black;
+    position: fixed;
+    background-color: var(--sidebar-clr);
+}
+
+#topStuff {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#profileStuff {
+    display: flex;
+    align-items: center;
+}
+
+#profilePic {
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+}
+
+#bottomStuff {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#content {
+    width: 85vw;
+    height: 100vh;
+    position: absolute;
+    left: 15vw;
+}
+
+.contentDiv {
+    border-radius: 10px;
+    height: 80vh;
+    width: 30vw;
+    background-color: var(--sidebar-clr);
+    position: fixed;
+    left: 18vw;
+    top: 10vh;
+}
+
+#sideDiv {
+    left: 55vw;
+}
