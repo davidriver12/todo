@@ -6,6 +6,19 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+    <div class="date-picker centered">
+        <div class="selected-date"></div>
+        <div class="dates">
+            <div class="month">
+                <div class="arrows prev-mth">&lt;</div>
+                <div class="mth"></div>
+                <div class="arrows next-mth">&gt;</div>
+            </div>
+
+            <div class="days"></div>
+            <button id="submitBtn">Submit</button>
+        </div>
+    </div>
     <div id="sidebar">
         <div id="topStuff">
             <div id="profileStuff">
@@ -23,7 +36,7 @@
             <button class="highlight">Projects</button>
         </div>
     </div>
-    <div class="contentDiv" id="mainDiv"></div>
-    <div class="contentDiv" id="sideDiv "></div>
+    <div class="contentDiv active" id="mainDiv"></div>
+    <div class="contentDiv" id="sideDiv"></div>
 </body>
 </html>

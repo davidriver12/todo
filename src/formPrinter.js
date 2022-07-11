@@ -1,10 +1,12 @@
-const formPrinter = (() => {
+const formPrinterCreator = () => {
 
-    const printTaskForm = () => {
-        const formDiv = document.createElement('div');
+    const printTaskForm = (datePicker) => {
+        let wrapper = document.createElement('div');
         
-    }
+    };
 
     return {printTaskForm};
 
-})();
+}
+
+export {formPrinterCreator};

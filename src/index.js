@@ -1,7 +1,23 @@
-import { format, formatDistance, addDays } from 'date-fns'
 import './style.css';
-import { createTask } from './task.js';
+import { taskCreatorFunction } from './task.js';
 import './assets/samplePic.jpg';
+import { datePicker } from './datePicker.js';
+import {formPrinterCreator} from './formPrinter.js';
+
+const datePicker1 = datePicker();
+const formPrinter = formPrinterCreator();
+const taskCreator = taskCreatorFunction();
+
+const submitBtn = document.querySelector('#submitBtn');
+submitBtn.addEventListener('click',function(){
+    datePicker1.runDatePicker();
+});
+
+const newTaskBtn = document.querySelector('#taskBtn');
+newTaskBtn.addEventListener('click', function(){
+    datePicker1.runDatePicker();
+});
+//datePicker1.runDatePicker();
 
 /*
 const today = new Date();

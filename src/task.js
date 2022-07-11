@@ -1,10 +1,14 @@
-function createTask(title, description, dueDate, priority) {
-    return {
-        title,
-        description,
-        dueDate,
-        priority
-    }
-}
+const taskCreatorFunction = () => {
 
-export { createTask };
+    function createTask(title, description, dueDate, priority) {
+        return {
+            title,
+            description,
+            dueDate,
+            priority
+        }
+    }
+
+};
+
+export { taskCreatorFunction };
