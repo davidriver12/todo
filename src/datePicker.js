@@ -26,7 +26,7 @@ const datePicker = () => {
     mth_element.textContent = months[month] + ' ' + year;
 
     selected_date_element.textContent = formatDate(date);
-    selected_date_element.dataset.value = selectedDate;
+    selected_date_element.dataset.value = formatDate2(selectedDate);
 
     populateDates();
 
@@ -89,7 +89,7 @@ const datePicker = () => {
                 selectedMonth = month;
                 selectedYear = year;
                 selected_date_element.textContent = formatDate(selectedDate);
-                selected_date_element.dataset.value = selectedDate;
+                selected_date_element.dataset.value = formatDate2(selectedDate);
 
                 populateDates();
             });
@@ -105,6 +105,11 @@ const datePicker = () => {
             }
         }
         return false;
+    }
+
+    function formatDate2(d){
+        date = d.toDateString();
+        return date;
     }
 
     function formatDate(d){

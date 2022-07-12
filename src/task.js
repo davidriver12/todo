@@ -1,14 +1,18 @@
-const taskCreatorFunction = () => {
+const taskManager = () => {
 
-    function createTask(title, description, dueDate, priority) {
+    let tasks = [];
+
+    function createTask(dueDate, title, description, priority) {
         return {
+            dueDate,
             title,
             description,
-            dueDate,
             priority
         }
     }
 
+    return {createTask, tasks};
+
 };
 
-export { taskCreatorFunction };
+export { taskManager };

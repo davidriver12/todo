@@ -17,6 +17,10 @@ body {
     color: rgb(219, 219, 219);
 }
 
+h2 {
+    color: black;
+}
+
 .centered {
     position: fixed;
     top: 25%;
@@ -39,6 +43,7 @@ a{
 }
 
 button {
+    color: #fff;
     cursor: pointer;
     font-weight: bolder;
     background-color: transparent;
@@ -49,6 +54,13 @@ button {
     background-color: var(--twitter-blue);
     border-radius: 15px;
     padding: 2vh 3vw 2vh 3vw;
+}
+
+#projectBtn {
+    background-color: var(--twitter-blue);
+    border-radius: 15px;
+    padding: 2vh 3vw 2vh 3vw;
+    width: 10vw;
 }
 
 #sidebar {
@@ -104,7 +116,7 @@ button {
     background-color: var(--sidebar-clr);
     position: fixed;
     left: 18vw;
-    top: 10vh;
+    bottom: 5vh;
 }
 
 .contentDiv.active {
@@ -114,12 +126,16 @@ button {
 
 #sideDiv {
     left: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .date-picker {
     width: 100%;
     max-width: 320px;
-    height: 60px;
+    height: 70px;
     z-index: 30;
     position: relative;
     background-color: #fff;
@@ -130,7 +146,9 @@ button {
 }
 
 .date-picker.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .date-picker .selected-date {
@@ -147,11 +165,12 @@ button {
     background-color: #F3F3F3;
 }
 
-#submitBtn {
+.submitBtn {
+    width: 100%;
     height: 8vh;
 }
 
-#submitBtn:hover {
+.submitBtn:hover {
     background-color: #F3F3F3;
 }
 
@@ -211,4 +230,68 @@ button {
 
 .date-picker .dates .days .day.selected {
     background-color: #00ca85;
+}
+
+.modal-bg.centered {
+    top: 50%;
+    background-color: #fff;
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task-card {
+    margin: 10px;
+    display: flex;
+}
+
+.task-card-text {
+    flex-grow: 1;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon-div {
+    background-color: var(--sidebar-clr);
+    position: fixed;
+    top: 2vh;
+    right: 25vw;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.icon-div img{
+    width: 2vw;
+    height: 2vw;
+}
+
+.premium-div {
+    background-color: var(--sidebar-clr);
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

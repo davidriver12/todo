@@ -6,7 +6,16 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+    <div class="icon-div">
+        <img src="../src/assets/config.png" alt="configuration" class="icon">
+        <img src="../src/assets/refresh.png" alt="refresh" class="icon">
+        <img src="../src/assets/magnify.png" alt="search" class="icon">
+    </div>
+    <div class="premium-div">
+        <p><a href="">Go Premium</a></p>
+    </div>
     <div class="date-picker centered">
+        <h2>Select due date for new task:</h2>
         <div class="selected-date"></div>
         <div class="dates">
             <div class="month">
@@ -16,7 +25,7 @@
             </div>
 
             <div class="days"></div>
-            <button id="submitBtn">Submit</button>
+            <button class="submitBtn" id="submitBtn">Submit</button>
         </div>
     </div>
     <div id="sidebar">
@@ -31,9 +40,10 @@
             <button class="highlight" id="taskBtn">+ New task</button>
         </div>
         <div id="bottomStuff">
-            <button class="highlight">Home</button>
-            <button class="highlight">Calendar</button>
-            <button class="highlight">Projects</button>
+            <h3 class="highlight">Home</h3>
+            <h3 class="highlight">Calendar</h3>
+            <h3 class="highlight">Projects</h3>
+            <button id="projectBtn">+ New Project</button>
         </div>
     </div>
     <div class="contentDiv active" id="mainDiv"></div>
