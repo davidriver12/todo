@@ -39,7 +39,11 @@ a{
 }
 
 .highlight {
+    cursor: pointer;
     color: white;
+}
+.highlight:hover {
+    background-color: #313131;
 }
 
 button {
@@ -51,6 +55,12 @@ button {
 }
 
 #taskBtn {
+    background-color: var(--twitter-blue);
+    border-radius: 15px;
+    padding: 2vh 3vw 2vh 3vw;
+}
+
+#projectTaskBtn {
     background-color: var(--twitter-blue);
     border-radius: 15px;
     padding: 2vh 3vw 2vh 3vw;
@@ -97,7 +107,56 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#homeBtn{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calendarBtn{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-container{
+    width: 100%;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+#projectsUl {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#projectsUl h3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectsUl li{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0 1vh 0;
+    list-style: none;
+}
+#projectsUl li:hover {
+    background-color: #494949;
 }
 
 #content {
@@ -122,6 +181,18 @@ button {
 .contentDiv.active {
     opacity: 1;
     visibility: visible;
+}
+
+#mainDiv {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#mainDiv h2 {
+    color: white;
 }
 
 #sideDiv {
@@ -166,6 +237,7 @@ button {
 }
 
 .submitBtn {
+    color: #000;
     width: 100%;
     height: 8vh;
 }
@@ -233,13 +305,14 @@ button {
 }
 
 .modal-bg.centered {
+    background-color: white;
     top: 50%;
-    background-color: #fff;
     width: 40vw;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 
 .modal {
@@ -253,14 +326,50 @@ button {
 }
 
 .task-card {
+    width: 100%;   
     margin: 10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.task-card:hover {
+    background-color: #313131;
+}
+
+.task-card input {
+    margin-left: 1vw;
 }
 
 .task-card-text {
     flex-grow: 1;
     margin-left: 10px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.standard {
+    color: black;
+    border-radius: 10px;
+    padding: 1vh 3vw 1vh 3vw;
+    background-color: #55d170;
+}
+.important {
+    color: black;
+    border-radius: 10px;
+    padding: 1vh 3vw 1vh 3vw;
+    background-color: #c9d155;
+}
+.urgent {
+    border-radius: 10px;
+    padding: 1vh 3vw 1vh 3vw;
+    background-color: #d15555;
 }
 
 .icon-div {

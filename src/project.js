@@ -2,7 +2,8 @@ const projectManager = () => {
 
     let projects = [];
 
-    function craeteProject(dueDate, title, description, priority, tasks){
+    function createProject(dueDate, title, description, priority){
+        let tasks = [];
         return {
             dueDate,
             title,
@@ -12,7 +13,7 @@ const projectManager = () => {
         };
     };
 
-    return {projects, craeteProject};
+    return {projects, createProject};
 
 };
 

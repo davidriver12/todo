@@ -26,6 +26,7 @@
 
             <div class="days"></div>
             <button class="submitBtn" id="submitBtn">Submit</button>
+            <button class="submitBtn hidden" id="submitBtn3">Submit</button>
         </div>
     </div>
     <div id="sidebar">
@@ -40,10 +41,14 @@
             <button class="highlight" id="taskBtn">+ New task</button>
         </div>
         <div id="bottomStuff">
-            <h3 class="highlight">Home</h3>
-            <h3 class="highlight">Calendar</h3>
-            <h3 class="highlight">Projects</h3>
-            <button id="projectBtn">+ New Project</button>
+            <h3 class="highlight" id="homeBtn">Home</h3>
+            <h3 class="highlight" id="calendarBtn">Calendar</h3>
+            <div class="projects-container">
+                <ul class="highlight" id="projectsUl">
+                    <h3 class="highlight">Projects: </h3>
+                </ul>
+                <button id="projectBtn">+ New Project</button>
+            </div>
         </div>
     </div>
     <div class="contentDiv active" id="mainDiv"></div>

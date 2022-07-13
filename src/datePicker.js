@@ -43,6 +43,28 @@ const datePicker = () => {
 
     //FUNCTIONS
 
+    function switchToBtn1(){
+        let submitBtn = document.querySelector('#submitBtn');
+        if (submitBtn.classList.contains('hidden')){
+            submitBtn.classList.toggle('hidden');
+        }
+        let submitBtn3 = document.querySelector('#submitBtn3')
+        if(!(submitBtn3.classList.contains('hidden'))){
+            submitBtn3.classList.add('hidden');
+        }
+    }
+
+    function switchToBtn3(){
+        let submitBtn = document.querySelector('#submitBtn');
+        if (!(submitBtn.classList.contains('hidden'))){
+            submitBtn.classList.add('hidden');
+        }
+        let submitBtn3 = document.querySelector('#submitBtn3')
+        if(submitBtn3.classList.contains('hidden')){
+            submitBtn3.classList.toggle('hidden');
+        }
+    }
+
     function runDatePicker(){
         date_picker_element.classList.toggle('active');
     }
@@ -130,7 +152,7 @@ const datePicker = () => {
         return new Date(year, month, 0).getDate();
     }
 
-    return {runDatePicker};
+    return {runDatePicker, switchToBtn1, switchToBtn3, formatDate2};
 
 };
 
